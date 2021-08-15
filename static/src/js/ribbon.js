@@ -12,7 +12,9 @@ odoo.define('attendance_ribbon.ribbon', function(require) {
             )
         }
         function show_attendance_ribbon(data) {
-            console.log(data);
+            if(!data || data.no_ribbon)
+                return;
+                
             if(!data.checked_in) {
                 console.log(data.checked_in);
                 show_ribbon("You are currently checked out");

@@ -14,6 +14,7 @@
         "hr_attendance",
     ],
     'data': [
+        'views/hr_employee.xml',
         'views/web_asset_backend_template.xml',
     ],
     'qweb': [
