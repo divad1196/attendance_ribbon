@@ -3,8 +3,8 @@
 from odoo import api, models, fields
 
 
-class HREmployee(models.Model):
-    _inherit = 'hr.employee'
+class HREmployee(models.AbstractModel):
+    _inherit = 'hr.employee.base'
 
     no_ribbon_alert = fields.Boolean(
         string="No Ribbon Alert",
